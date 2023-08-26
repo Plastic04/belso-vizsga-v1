@@ -1,0 +1,8 @@
+<div class="container mt-5">
+    <input class="form-control mb-2" [(ngModel)]="inputValue" (ngModelChange)="evaluateInput()">
+    <button class="btn btn-primary" (click)="saveResult()">Save</button>
+    <p>{{ resultMessage }}</p>
+    <ul>
+      <li *ngFor="let log of logs">{{ log }}</li>
+    </ul>
+  </div>
